@@ -1,0 +1,42 @@
+<!-- INCLUDE overall_header.html -->
+
+<form id="confirm" action="{S_CONFIRM_ACTION}" method="post">
+
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	
+	<div class="content">
+	<!-- IF S_LOCK_TOPIC -->
+		<h2>{MESSAGE_TITLE}</h2>
+		<!-- IF ADDITIONAL_MSG --><p>{ADDITIONAL_MSG}</p><!-- ENDIF -->
+		
+	<p>{L_LOCK_TOPIC_CONFIRM}<br /><br /><input type="checkbox" name="nts_lock" id="nts_lock" checked="checked" />{L_LOCK_TOPIC_NOTIFY}</p>
+	
+	<fieldset>
+	<dl>
+		<dt><label for="nts_lock_reason">{L_LOCK_REASON}</label><br /><span>{L_LOCK_EXPLAIN_NOTIFY}</span></dt>
+		<dd><label for="nts_lock_reason"><textarea name="nts_lock_reason" id="nts_lock_reason" class="inputbox" cols="40" rows="3"></textarea></label></dd>
+	</dl>
+	</fieldset>
+	<!-- ELSE -->
+			<h2>{L_UNLOCK_TOPIC}</h2>
+			<p>{L_UNLOCK_TOPIC_CONFIRM}</p>		
+		
+	<!-- ENDIF -->
+
+		<fieldset class="submit-buttons">
+			{S_HIDDEN_FIELDS}<input type="submit" name="confirm" value="{YES_VALUE}" class="button1" />&nbsp; 
+			<input type="submit" name="cancel" value="{L_NO}" class="button2" />
+			{S_FORM_TOKEN}
+		</fieldset>
+
+	</div>
+	
+
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</form>
+
+<!-- INCLUDE overall_footer.html -->
