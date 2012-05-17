@@ -128,7 +128,7 @@ p.right {
 
 #illustration {
   background: url("{T_THEME_PATH}/images/illustration.png") top right no-repeat;
-  height: 100px;
+  height: 96px;
   margin: -6px auto 0;
 }
 
@@ -215,7 +215,7 @@ p.right {
 /* Site name and description
 --------------------------------------------- */
 #site-description {
-  margin-top: 30px;
+  margin-top: 24px;
   margin-left: 20px;
   position: absolute;
 }
