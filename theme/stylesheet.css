@@ -238,7 +238,7 @@ h2 {
     /* Forum header titles */
     font-weight: normal;
     color: #3f3f3f;
-    font-size: 26px;
+    font-size: 2.2em;
     margin-bottom: 10px;
 }
 
@@ -1281,7 +1281,6 @@ dl.faq dt {
 
 .content ul, .content ol {
     margin-bottom: 1em;
-    margin-left: 3em;
 }
 
 .posthilit {
@@ -3860,6 +3859,21 @@ input.disabled {
         height: 76px;
         margin: -6px auto 0;
     }
+    #site-description {
+        padding: 24px 0 0 64px;
+        margin: 0;
+    }
+    #site-description .logo {
+        display: block;
+        position: absolute;
+        padding: 11px 6px 11px 10px;
+        top: 6px;
+        left: 0;
+    }
+    #site-description .logo img {
+        width: 48px;
+        height: 48px;
+    }
     /* Temporaru solution */
     #account, #main-navigation {
         background: #617179; /* Old browsers */
@@ -3920,9 +3934,19 @@ input.disabled {
     html { height: 101%; }
     /* Styles */
     #site-description {
-        background: url("{T_THEME_PATH}/images/logo.png") 12px 19px no-repeat;
         margin: 0;
         padding: 24px 0 0 82px;
+    }
+    #site-description .logo {
+        display: block;
+        position: absolute;
+        padding: 13px 6px 13px 12px;
+        top: 6px;
+        left: 0;
+    }
+    #site-description .logo img {
+        width: 64px;
+        height: 64px;
     }
     #illustration {
         background: url("{T_THEME_PATH}/images/illustration.png") top right no-repeat;
