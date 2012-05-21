@@ -88,7 +88,7 @@
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}"><!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="wrapper">
   <div id="header">
-    <div id="account">
+    <nav id="account">
       <ul class="leftside">
         <li><!-- IF S_USER_LOGGED_IN -->{LAST_VISIT_DATE}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --></li>
       </ul>
@@ -109,7 +109,7 @@
           <!-- IF U_SEND_PASSWORD --><li><a href="{U_SEND_PASSWORD}" title="{L_FORGOT_PASS}">{L_FORGOT_PASS}</a></li><!-- ENDIF -->
         </ul>
       <!-- ENDIF -->
-    </div>
+    </nav>
     
     <div id="illustration">
       <div id="site-description">
@@ -118,7 +118,7 @@
       </div>
     </div>
     
-    <div id="main-navigation">
+    <nav id="main-navigation">
       <ul id="primary-navigation" class="leftside">
         <li><a href="{U_INDEX}" title="{L_INDEX}">{L_INDEX}</a></li>
         <li><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>
@@ -142,7 +142,7 @@
           <!-- IF U_PRINT_PM --><li><a href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print">{L_PRINT_PM}</a></li><!-- ENDIF -->
         </ul>
       <!-- ENDIF -->
-    </div>
+    </nav>
   </div>
   <div class="banners top">
     <div class="banner">

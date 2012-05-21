@@ -10,92 +10,67 @@
          about phpBB please visit http://www.phpbb.com
     --------------------------------------------------------------
 */
+/* Reset stuff */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 10px; line-height: 1.231; }
+html, body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"], [role="button"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+* { margin: 0; padding: 0; }
 
-* {
+/* Basic styles
+ */
+nav ul {
     margin: 0;
     padding: 0;
 }
-
-html {
-    /* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
-     height: 101%;
-}
-
-body {
-    background: #D5D5CB;
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
-    color: #828282;
-    font-size: 10px;
-}
-
-h1 {
-    /* Forum name */
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-h2 {
-    /* Forum header titles */
-    font-weight: normal;
-    color: #3f3f3f;
-    font-size: 26px;
-    margin-bottom: 10px;
-}
-
-h3 {
-    /* Sub-headers (also used as post headers, but defined later) */
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 1px solid #999;
-    margin-bottom: 3px;
-    padding-bottom: 3px;
-    font-size: 11px;
-    color: #989898;
-    margin-top: 20px;
-}
-
-h4 {
-    /* Forum and topic list titles */
-    font-size: 12px;
-}
-
-p {
-    line-height: 1.3em;
-    font-size: 11px;
-    margin-bottom: 1.5em;
-}
-
-img {
-    border-width: 0;
-}
-
-hr {
-    /* Also see tweaks.css */
-    border: 0 none #FFFFFF;
-    border-top: 1px solid #999;
-    height: 1px;
-    margin: 5px 0;
-    display: block;
-    clear: both;
-}
-
-hr.dashed {
-    border-top: 1px dashed #CCCCCC;
-    margin: 10px 0;
-}
-
-hr.divider {
-    display: none;
-}
-
-p.right {
-    text-align: right;
-}
-
 /* Structure
 ---------------------------------------- */
-
 #simple-wrapper {
     background: #fff;
     padding: 10px 15px;
@@ -110,23 +85,7 @@ p.right {
     background: linear-gradient(top,    #F2F4F5 0%,#FBFCFD 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617179', endColorstr='#FBFCFD',GradientType=0 ); /* IE6-9 */
 }
-#account {
-    background: #617179; /* Old browsers */
-    background: -moz-linear-gradient(top,    #617179 0%, #727E82 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#617179), color-stop(100%,#727E82)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,    #617179 0%,#727E82 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,    #617179 0%,#727E82 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,    #617179 0%,#727E82 100%); /* IE10+ */
-    background: linear-gradient(top,    #617179 0%,#727E82 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617179', endColorstr='#727E82',GradientType=0 ); /* IE6-9 */
-    height: 32px;
-    line-height: 32px;
-}
 
-#illustration {
-    height: 96px;
-    margin: -6px auto 0;
-}
 
 #container {
     margin: 5px 0 20px;
@@ -136,16 +95,21 @@ p.right {
     padding: 18px 0;
     position: absolute;
 }
-
-/* Navigation
---------------------------------------------- */
-#account, #main-navigation {
-    padding: 0 22px;
+#wrapper, #footer-inner {
+    min-width: 320px;
+    width: 100%;
 }
 
+
+#illustration {
+    height: 96px;
+    margin: -6px auto 0;
+}
+/* Navigation
+--------------------------------------------- */
 #account li {
     display: inline-block;
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 #account li + li {
@@ -162,18 +126,7 @@ p.right {
 #account li a:hover, #primary-navigation li a:hover {
     text-decoration: underline;
 }
-#main-navigation {
-    background: #617179; /* Old browsers */
-    background: -moz-linear-gradient(top,    #617179 0%, #727E82 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#617179), color-stop(100%,#727E82)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,    #617179 0%,#727E82 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,    #617179 0%,#727E82 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,    #617179 0%,#727E82 100%); /* IE10+ */
-    background: linear-gradient(top,    #617179 0%,#727E82 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617179', endColorstr='#727E82',GradientType=0 ); /* IE6-9 */
-    height: 32px;
-    line-height: 32px;
-}
+
 #main-navigation .linklist.icons {
     height: auto;
     padding: 8px 0;
@@ -184,7 +137,7 @@ p.right {
     padding-right: 14px;
     float: left;
     display: block;
-    font-size: 11px;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -214,7 +167,7 @@ p.right {
 }
 
 #site-description h1 {
-    font-size: 24px;
+    font-size: 2.4em;
     font-weight: normal;
     color: #1d2d36;
 }
@@ -222,7 +175,7 @@ p.right {
 #site-description p {
     margin-left: 0;
     line-height: 24px;
-    font-size: 16px;
+    font-size: 1.6em;
     color: #535353;
     display: none;
 }
@@ -233,7 +186,7 @@ p.right {
     background: #617179;
     width: 100%;
     left: 0;
-    font-size: 11px;
+    font-size: 1.1em;
 }
 #footer-inner {
     /* Clear fix */
@@ -271,6 +224,79 @@ p.right {
 .feed {
     background: url("{T_THEME_PATH}/images/feed_small.gif") right center no-repeat;
 }
+/* Basic styles */
+body {
+    background: #D5D5CB;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #828282;
+}
+
+h1 {
+    /* Forum name */
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h2 {
+    /* Forum header titles */
+    font-weight: normal;
+    color: #3f3f3f;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    /* Sub-headers (also used as post headers, but defined later) */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #999;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    font-size: 1.1em;
+    color: #989898;
+    margin-top: 20px;
+}
+
+h4 {
+    /* Forum and topic list titles */
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 1.3em;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+img {
+    border-width: 0;
+}
+
+hr {
+    /* Also see tweaks.css */
+    border: 0 none #FFFFFF;
+    border-top: 1px solid #999;
+    height: 1px;
+    margin: 5px 0;
+    display: block;
+    clear: both;
+}
+
+hr.dashed {
+    border-top: 1px dashed #CCCCCC;
+    margin: 10px 0;
+}
+
+hr.divider {
+    display: none;
+}
+
+p.right {
+    text-align: right;
+}
+
+
 
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
@@ -754,7 +780,7 @@ a:active      { color: #d2d2d2; text-decoration: underline; }
 /* Links for forum/topic lists */
 a.forumtitle {
     font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
-    font-size: 12px;
+    font-size: 1.2em;
     font-weight: bold;
     color: #898989;
     text-decoration: underline;
@@ -773,7 +799,7 @@ a.forumtitle:active {
 
 a.topictitle {
     font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
-    font-size: 12px;
+    font-size: 1.2em;
     font-weight: bold;
     color: #898989;
     text-decoration: underline;
@@ -1499,7 +1525,7 @@ div.inline-attachment p {
 }
 
 dl.file {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     display: block;
 }
 
@@ -1508,7 +1534,7 @@ dl.file dt {
     margin: 0;
     padding: 0;
     font-weight: bold;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 dl.file dd {
@@ -1526,7 +1552,7 @@ dl.thumbnail img {
 dl.thumbnail dd {
     color: #666666;
     font-style: italic;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 .attachbox dl.thumbnail dd {
@@ -1544,7 +1570,7 @@ dl.thumbnail dt a:hover img {
 /* Post poll styles
 ----------------------------------------*/
 fieldset.polls {
-    font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 fieldset.polls dl {
@@ -1590,7 +1616,7 @@ fieldset.polls dd input {
 
 fieldset.polls dd div {
     text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     color: #FFFFFF;
     font-weight: bold;
     padding: 0 2px;
@@ -1639,7 +1665,7 @@ fieldset.polls dd div {
     width: 22%;
     float: left;
     display: inline;
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 .pm .postprofile {
@@ -1700,8 +1726,8 @@ dl.pmlist dd {
 
 .forums th {
     padding: 6px 0;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-family: sans-serif;
     color: #fff;
     font-weight: normal;
 }
@@ -2339,10 +2365,10 @@ ol.def-rules li {
 ----------------------------------------*/
 fieldset {
     border-width: 0;
-    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
     font-size: 1.1em;
 }
-
+/*
 input {
     font-weight: normal;
     cursor: pointer;
@@ -2395,6 +2421,7 @@ label input {
 label img {
     vertical-align: middle;
 }
+*/
 
 /* Definition list layout for forms
 ---------------------------------------- */
@@ -3774,9 +3801,6 @@ input.search {
 input.disabled {
     color: #666666;
 }
-
-
-
 /*
     Banners
 */
@@ -3796,18 +3820,34 @@ input.disabled {
     max-height: 90px;
     min-width: 320px;
 }
-
 /*
  * Tacked on Responsive!
  */
 /* iPhone portrait*/
 @media (min-width: 320px) {
+/*    #account {
+        padding: none;
+        height: auto;
+        line-height: auto;
+        background: none;
+    }*/
     #account .leftside {
         display: none;
+    }
+    #account .rightside {
+/*        display: none;*/
     }
     #illustration {
         height: 76px;
         margin: -6px auto 0;
+    }
+    /* Temporaru solution */
+    #account, #main-navigation {
+        background: #617179; /* Old browsers */
+        height: 32px;
+        line-height: 32px;
+        padding: 0 22px;
+        overflow-x: auto;
     }
 }
 /* iPhone landscape */
@@ -3819,21 +3859,51 @@ input.disabled {
 }
 /* iPad portrait */
 @media (min-width: 768px) {
+    /* Some added reset stuff for desktop browsers*/
+    legend { white-space: normal; }
+    body { margin: 0; font-size: 10px; line-height: 1.4; }
+    ::-moz-selection { background: #b3d4fc; text-shadow: none; }
+    ::selection { background: #b3d4fc; text-shadow: none; }
+    button[disabled], input[disabled] { cursor: default; }
+    button, input[type="button"], input[type="reset"], input[type="submit"], [role="button"] { *overflow: visible; }
+    input[type="checkbox"], input[type="radio"] { *width: 13px; *height: 13px; }
+    input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+    html { height: 101%; }
+    /* Styles */
+    #site-description {
+        background: url("{T_THEME_PATH}/images/logo.png") 12px 19px no-repeat;
+        margin: 0;
+        padding: 24px 0 0 82px;
+    }
     #illustration {
         background: url("{T_THEME_PATH}/images/illustration.png") top right no-repeat;
         height: 96px;
         margin: -6px auto 0;
     }
+    #account, #main-navigation {
+        background: #617179; /* Old browsers */
+        background: -moz-linear-gradient(top,    #617179 0%, #727E82 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#617179), color-stop(100%,#727E82)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,    #617179 0%,#727E82 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,    #617179 0%,#727E82 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,    #617179 0%,#727E82 100%); /* IE10+ */
+        background: linear-gradient(top,    #617179 0%,#727E82 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617179', endColorstr='#727E82',GradientType=0 ); /* IE6-9 */
+        height: 32px;
+        line-height: 32px;
+        padding: 0 22px;
+    }
+    #account .rightside {
+        display: block;
+    }
     #site-description p {
         display: block;
     }
-}
+
+} 
 /* Here we start off with desktop size */
 @media (min-width: 980px) {
-    /* Show elements */
-    #account .leftside {
-        display: block;
-    }
+    
     /* Forums wrapper */
     .forums-wrapper {
         background: #617179; /* Old browsers */
@@ -3851,18 +3921,55 @@ input.disabled {
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
     }
-    #wrapper, #footer-inner {
-        min-width: 980px;
-        max-width: 70%;
-        margin: auto;
-    }
     /* Banners */
     .banners > .banner img {
         width: 728px;
         height: 90px;
     }
-}
+    #wrapper, #footer-inner {
+        min-width: 980px;
+        max-width: 70%;
+        margin: auto;
+    }
+
 /* Bonus things for large screens */
 @media (min-width: 1040px) {
 
+}
+
+/* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+/* non-semantic helper classes  */
+.nocallout {-webkit-touch-callout: none;}
+textarea[contenteditable] {-webkit-appearance: none;}
+.gifhidden {position: absolute; left: -100%;}
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+/* print styles */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
 }
