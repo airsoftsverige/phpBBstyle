@@ -117,16 +117,16 @@
   <div id="p{postrow.POST_ID}" class="post <!-- IF postrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF -->">
     <!-- IF not postrow.S_IGNORE_POST -->
     <div class="postprofile<!-- IF postrow.S_ONLINE and not postrow.S_IGNORE_POST --> online<!-- ENDIF -->" id="profile{postrow.POST_ID}">
-        <a href="{postrow.U_POST_AUTHOR}" class="online"><img src="{T_IMAGESET_LANG_PATH}/icon_user_online.gif"></a>
+        <a href="{postrow.U_POST_AUTHOR}" class="online"><img src="{T_IMAGESET_LANG_PATH}/icon_user_online.gif" title="{postrow.POST_AUTHOR}"></a>
       <dl>
           <dt>
             <!-- IF postrow.POSTER_AVATAR -->
-              <!-- IF postrow.U_POST_AUTHOR --><a href="{postrow.U_POST_AUTHOR}">{postrow.POSTER_AVATAR}</a><!-- ELSE -->{postrow.POSTER_AVATAR}<!-- ENDIF --><br />
+              <!-- IF postrow.U_POST_AUTHOR --><a href="{postrow.U_POST_AUTHOR}" title="{postrow.POST_AUTHOR}">{postrow.POSTER_AVATAR}</a><!-- ELSE -->{postrow.POSTER_AVATAR}<!-- ENDIF --><br />
             <!-- ENDIF -->
-            <!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<!-- ENDIF -->
+            <span title="{postrow.POST_AUTHOR}"><!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<!-- ENDIF --></span>
           </dt>
           
-          <dd><!-- IF postrow.RANK_IMG -->{postrow.RANK_IMG}<!-- ELSEIF postrow.RANK_TITLE -->{postrow.RANK_TITLE}<!-- ENDIF --></dd>
+          <dd><!-- IF postrow.RANK_IMG -->{postrow.RANK_IMG}<!-- ELSEIF postrow.RANK_TITLE --><span title="{postrow.RANK_TITLE}">{postrow.RANK_TITLE}</span><!-- ENDIF --></dd>
         <!-- IF postrow.POSTER_POSTS != '' --><dd><strong>{L_POSTS}:</strong> {postrow.POSTER_POSTS}</dd><!-- ENDIF -->
         <!-- IF postrow.POSTER_JOINED --><dd><strong>{L_JOINED}:</strong> {postrow.POSTER_JOINED}</dd><!-- ENDIF -->
         <!-- IF postrow.POSTER_FROM --><dd><strong>{L_LOCATION}:</strong> {postrow.POSTER_FROM}</dd><!-- ENDIF -->
