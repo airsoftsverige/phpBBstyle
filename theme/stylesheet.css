@@ -1680,17 +1680,15 @@ fieldset.polls dd div {
 .postprofile.online .online {
     display: block
 }
-.postprofile dl {
-    /* Also see tweaks.css */
-    display: inline;
-}
 .pm .postprofile {
     border-right: 1px solid #ddd;
 }
 
 .postprofile dd, .postprofile dt {
-    line-height: 15px;
+    line-height: 1.4em;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .postprofile dd:first-of-type {
     margin-bottom: 1em;
@@ -3869,10 +3867,31 @@ input.disabled {
     /* Temporaru solution */
     #account, #main-navigation {
         background: #617179; /* Old browsers */
-        height: 32px;
+        height: auto;
         line-height: 32px;
         padding: 0 22px;
         overflow-x: auto;
+    }
+    .postprofile {
+        width: 100px;
+    }
+    .postprofile dt img {
+        max-width: 100px;
+        height: auto;
+    }
+    .postprofile .online img {
+        width: 50px;
+        height: 50px;
+    }
+    .postbody {
+        margin: 0 0 0 120px;
+    }
+    .postbody ul.profile-icons {
+        display: block;
+        width: 100%;
+        margin: 0 0 5px -5px;
+        float: none;
+        height: 20px;
     }
 }
 /* iPhone landscape */
@@ -3880,7 +3899,15 @@ input.disabled {
 
 }
 @media (min-width: 600px) {
-
+    .postbody ul.profile-icons {
+        display: block;
+        width: auto;
+        margin: 0;
+        float: right;
+    }
+    #account, #main-navigation {
+        height: 32px;
+    }
 }
 /* iPad portrait */
 @media (min-width: 768px) {
@@ -3925,10 +3952,24 @@ input.disabled {
         display: block;
     }
 
+
 } 
 /* Here we start off with desktop size */
 @media (min-width: 980px) {
-    
+        /* Profile */
+   .postprofile {
+        width: 150px;
+    }
+    .postprofile dt img {
+        max-width: 150px;
+    }
+    .postprofile .online img {
+        width: 58px;
+        height: 58px;
+    }
+    .postbody {
+        margin: 0 0 0 170px;
+    }
     /* Forums wrapper */
     .forums-wrapper {
         background: #617179; /* Old browsers */
