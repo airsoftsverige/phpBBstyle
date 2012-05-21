@@ -320,7 +320,7 @@ p.right {
 }
 
 .post {
-    padding: 0 10px 5px;
+    padding: 0 10px 5px 0;
     margin-bottom: 4px;
     background-repeat: no-repeat;
     background-position: 100% 0;
@@ -1134,9 +1134,10 @@ div[class].topic-actions {
 ----------------------------------------*/
 .postbody {
     padding: 10px 0 0 10px;
-    margin: 0 0 0 160px;
+    margin: 0 0 0 170px;
     line-height: 1.48em;
     color: #333;
+    border-left: 1px solid #fff;
 }
 
 .postbody .ignore {
@@ -1657,11 +1658,12 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-    margin: 5px 0 10px 0;
+    margin: 0;
     min-height: 80px;
     color: #666;
     border-right: 1px solid #fff;
-    width: 160px;
+    width: 150px;
+    padding: 0 10px;
     float: left;
     font-size: 1.1em;
     position: relative;
@@ -3453,6 +3455,7 @@ fieldset.polls dd div {
 
 .post .postprofile.online dt {
     margin-top: 10px;
+    text-align: center;
 }
 
 /*    
