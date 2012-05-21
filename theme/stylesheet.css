@@ -320,10 +320,13 @@ p.right {
 }
 
 .post {
-    padding: 0 10px;
+    padding: 0 10px 5px;
     margin-bottom: 4px;
     background-repeat: no-repeat;
     background-position: 100% 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .post:target .content {
@@ -1130,12 +1133,10 @@ div[class].topic-actions {
 /* Post body styles
 ----------------------------------------*/
 .postbody {
-    padding: 0;
+    padding: 10px 0 0 10px;
+    margin: 0 0 0 160px;
     line-height: 1.48em;
     color: #333;
-    width: 77%;
-    float: right;
-    clear: both;
 }
 
 .postbody .ignore {
@@ -1161,7 +1162,6 @@ div[class].topic-actions {
 .postbody .content {
     font-size: 1.3em;
 }
-
 .search .postbody {
     width: 73%
 }
@@ -1657,17 +1657,28 @@ fieldset.polls dd div {
 /* Poster profile block
 ----------------------------------------*/
 .postprofile {
-    /* Also see tweaks.css */
     margin: 5px 0 10px 0;
     min-height: 80px;
     color: #666;
     border-right: 1px solid #fff;
-    width: 22%;
+    width: 160px;
     float: left;
-    display: inline;
     font-size: 1.1em;
+    position: relative;
 }
-
+.postprofile .online {
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+}
+.postprofile.online .online {
+    display: block
+}
+.postprofile dl {
+    /* Also see tweaks.css */
+    display: inline;
+}
 .pm .postprofile {
     border-right: 1px solid #ddd;
 }
@@ -1676,7 +1687,9 @@ fieldset.polls dd div {
     line-height: 15px;
     margin: 0;
 }
-
+.postprofile dd:first-of-type {
+    margin-bottom: 1em;
+}
 .postprofile strong {
     font-weight: normal;
     color: #000000;
@@ -1687,7 +1700,7 @@ fieldset.polls dd div {
     margin-bottom: 3px;
 }
 
-.online {
+.postprofile.online {
     background-image: none;
     background-position: 100% 0;
     background-repeat: no-repeat;
@@ -1908,6 +1921,7 @@ ul.profile-icons li a:hover { background: none; }
     float: right;
     width: auto;
     padding: 0;
+    margin: 0;
 }
 
 .postbody ul.profile-icons li {
@@ -3425,19 +3439,19 @@ fieldset.polls dd div {
     color: #000000;
 }
 
-.online {
-    background-image: url("{T_IMAGESET_LANG_PATH}/icon_user_online.gif");
+.postprofile.online {
+/*    background-image: url("{T_IMAGESET_LANG_PATH}/icon_user_online.gif");*/
 }
 
-.post .online {
-    margin-top: -5px;
+.post .postprofile.online {
+    margin-top: 0px;
 }
 
-.pm .online {
+.pm .postprofile.online {
     margin-top: -10px;
 }
 
-.post .online dt {
+.post .postprofile.online dt {
     margin-top: 10px;
 }
 
