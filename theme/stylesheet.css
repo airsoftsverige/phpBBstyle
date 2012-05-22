@@ -1214,7 +1214,7 @@ div[class].topic-actions {
     overflow: hidden;
     line-height: 1.4em;
     font-family: Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #333333;
     padding-bottom: 1px;
 }
@@ -1223,7 +1223,7 @@ div[class].topic-actions {
     font-weight: normal;
     color: #989898;
     border-bottom: 1px solid #999;
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin-top: 0.5em;
     margin-bottom: 0.3em;
     padding-bottom: 0.3em;
@@ -1300,7 +1300,7 @@ p.author {
     margin: 0 15em 0.6em 0;
     padding: 0 0 5px 0;
     font-family: Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.2em;
 }
 p.author img {
@@ -3910,6 +3910,9 @@ input.disabled {
         float: none;
         height: 20px;
     }
+    .postbody {
+        font-size: 0.9em;
+    }
 }
 /* iPhone landscape */
 @media (min-width: 480px) {
@@ -3998,8 +4001,8 @@ input.disabled {
     .postbody {
         margin: 0 0 0 170px;
     }
-    .postbody .content {
-        font-size: 1.3em;
+    .postbody {
+        font-size: 1em;
     }
     #account li, #primary-navigation li {
         font-size: 1.1em;
