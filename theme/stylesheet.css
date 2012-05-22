@@ -175,7 +175,9 @@ nav ul {
     color: #535353;
     display: none;
 }
-
+#site-description a {
+    text-decoration: none !important;
+}
 /* Footer
 --------------------------------------------- */
 #footer, #footer-fixed {
