@@ -4093,3 +4093,6 @@ textarea[contenteditable] {-webkit-appearance: none;}
     background: #fff;
     font-size: 1.2em;
 }
+#notice span {
+    white-space: nowrap;
+}

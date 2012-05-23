@@ -84,9 +84,32 @@
         // ]]>
     </script>
     <script type="text/javascript" src="{T_TEMPLATE_PATH}/js/forum_fn.js"></script>
+    <!-- Ads -->
+    <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + 
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+        })();
+        </script>
+        
+        <script type='text/javascript'>
+        googletag.cmd.push(function() {
+        googletag.defineSlot('/16529617/Enhet1', [728, 90], 'div-gpt-ad-1337770418704-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+        });
+    </script>
 </head>
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}"><!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<div id="notice">Välkommen till nya AirsoftSverige! Läs mer i <a href="http://new.airsoftsverige.com/forum/viewtopic.php?f=31&t=624">den här tråden</a>. Gamla forumet finns kvar på: <a href="http://old.airsoftsverige.com/">http://old.airsoftsverige.com/</a></div>
+<div id="notice"><span>Välkommen till nya AirsoftSverige! Läs mer i <a href="http://new.airsoftsverige.com/forum/viewtopic.php?f=31&t=624">den här tråden</a>.</span> <span>Gamla forumet finns kvar på: <a href="http://old.airsoftsverige.com/">http://old.airsoftsverige.com/</a></span></div>
 <div id="wrapper">
   <div id="header">
     <nav id="account">
@@ -147,9 +170,15 @@
     </nav>
   </div>
   <div class="banners top">
-    <div class="banner">
-      <a href="{BOARD_URL}ucp.php?i=pm&mode=compose&u=63"><img src="{T_THEME_PATH}/images/banner_placeholder.png"></a>
+      <!-- Enhet1 -->
+    <div id='div-gpt-ad-1337770418704-0' style='width:728px; height:90px;'>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1337770418704-0'); });
+        </script>
     </div>
+<!--     <div class="banner">
+      <a href="{BOARD_URL}ucp.php?i=pm&mode=compose&u=63"><img src="{T_THEME_PATH}/images/banner_placeholder.png"></a>
+    </div> -->
   </div>
   <div id="container">
 
