@@ -5,15 +5,11 @@
 <h2>{L_MCP_WARN_POST}</h2>
 
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
-
   <h3><!-- IF USER_COLOR --><span style="color: #{USER_COLOR}">{USERNAME}</span><!-- ELSE -->{USERNAME}<!-- ENDIF --></h3>
-
   <div>
     <div class="column1">
       <!-- IF AVATAR_IMG --><div>{AVATAR_IMG}</div><!-- ENDIF -->
     </div>
-
     <div class="column2">
       <dl class="details">
         <!-- IF RANK_TITLE --><dt>{L_RANK}:</dt><dd>{RANK_TITLE}</dd><!-- ENDIF -->
@@ -24,32 +20,19 @@
       </dl>
     </div>
   </div>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
-
   <h3>{L_POST_DETAILS}</h3>
-
   <div class="postbody">
-
     <div class="content">
       {POST}
     </div>
-
   </div>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
-
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
-
   <h3>{L_ADD_WARNING}</h3>
   <p>{L_ADD_WARNING_EXPLAIN}</p>
-
   <fieldset>
     <textarea name="warning" id="warning" class="inputbox" cols="40" rows="3">{L_WARNING_POST_DEFAULT}</textarea>
     <!-- IF S_CAN_NOTIFY -->
@@ -60,10 +43,7 @@
     </dl>
     <!-- ENDIF -->
   </fieldset>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
-
 <fieldset class="submit-buttons">
   <input type="reset" value="{L_RESET}" name="reset" class="button2" />&nbsp; 
   <input type="submit" name="action[add_warning]" value="{L_SUBMIT}" class="button1" />

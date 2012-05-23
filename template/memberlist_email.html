@@ -1,12 +1,7 @@
 <!-- INCLUDE overall_header.html -->
-
 <h2>{L_SEND_EMAIL_USER} {USERNAME}</h2>
-
 <form method="post" action="{S_POST_ACTION}" id="post">
-
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
-
   <div class="content">
     <!-- IF ERROR_MESSAGE --><p class="error">{ERROR_MESSAGE}</p><!-- ENDIF -->
     <fieldset class="fields2">
@@ -45,21 +40,15 @@
     </dl>
     </fieldset>
   </div>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <div class="panel bg2">
-  <div class="inner"><span class="corners-top"><span></span></span>
   <div class="content">
     <fieldset class="submit-buttons">
       <input type="submit" tabindex="6" name="submit" class="button1" value="{L_SEND_EMAIL}" />
     </fieldset>
   </div>
-  <span class="corners-bottom"><span></span></span></div>
 {S_FORM_TOKEN}
 </div>
-
 </form>
-
 <!-- INCLUDE overall_footer.html -->

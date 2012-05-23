@@ -306,26 +306,29 @@ p.right {
 
 .forabg {
     background: #b1b1b1 none repeat-x 0 0;
-    margin-bottom: 4px;
+    margin-bottom: .4em;
     padding: 0 5px;
     clear: both;
 }
 
 .panel {
-    margin-bottom: 4px;
-    padding: 0 10px;
+    margin-bottom: .4em;
+    padding: 1em;
     background-color: #f3f3f3;
     color: #3f3f3f;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
 }
 
 .post {
     padding: 0 10px 5px 0;
-    margin-bottom: 4px;
+    margin-bottom: .4em;
     background-repeat: no-repeat;
     background-position: 100% 0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
 }
 
 .post:target .content {
@@ -704,7 +707,7 @@ div.rules {
 }
 
 .rules-header {
-    margin-bottom: 4px;
+    margin-bottom: .4em;
     display: block;
 }
 
@@ -1517,7 +1520,7 @@ dl.codebox + br {
 /* Inline image thumbnails */
 div.inline-attachment dl.thumbnail, div.inline-attachment dl.file {
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: .4em;
 }
 
 div.inline-attachment p {
@@ -2100,8 +2103,8 @@ ul.cplist {
 
 #tabs a {
     background: #f1f3f6;
-    -webkit-border-top-left-radius: 4px;
-    -webkit-border-top-right-radius: 4px;
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
     -moz-border-radius-topleft: 8px;
     -moz-border-radius-topright: 8px;
     border-top-left-radius: 3px;
@@ -4027,12 +4030,12 @@ input.disabled {
         background: -ms-linear-gradient(top,    #617179 0%,#727E82 100%); /* IE10+ */
         background: linear-gradient(top,    #617179 0%,#727E82 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617179', endColorstr='#727E82',GradientType=0 ); /* IE6-9 */
-        -webkit-border-top-left-radius: 4px;
-        -webkit-border-top-right-radius: 4px;
-        -moz-border-radius-topleft: 4px;
-        -moz-border-radius-topright: 4px;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+        -webkit-border-top-left-radius: .5em;
+        -webkit-border-top-right-radius: .5em;
+        -moz-border-radius-topleft: .5em;
+        -moz-border-radius-topright: .5em;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
     }
     /* Banners */
     .banners {

@@ -4,8 +4,6 @@
 
 <form method="post" action="{S_PROFILE_ACTION}" id="viewprofile">
   <div class="panel bg1 <!-- IF S_ONLINE -->online<!-- ENDIF -->">
-    <div class="inner"><span class="corners-top"><span></span></span>
-
     <!-- IF AVATAR_IMG -->
       <dl class="left-box" style="margin: 5px 0;">
         <dt class="avatar">{AVATAR_IMG}</dt>
@@ -48,16 +46,11 @@
         <!-- ENDIF -->
       <!-- ENDIF -->
     </dl>
-
-    <span class="corners-bottom"><span></span></span></div>
   </div>
 
   <div class="panel bg2">
-    <div class="inner"><span class="corners-top"><span></span></span>
     <div class="column1">
-
       <h3>{L_CONTACT_USER} {USERNAME}</h3>
-
       <dl class="details">
       <!-- IF U_EMAIL --><dt>{L_EMAIL_ADDRESS}:</dt> <dd><a href="{U_EMAIL}">{L_SEND_EMAIL_USER} {USERNAME}</a></dd><!-- ENDIF -->
       <!-- IF U_WWW --><dt>{L_WEBSITE}:</dt> <dd><a href="{U_WWW}" title="{L_VISIT_WEBSITE}: {U_WWW}">{U_WWW}</a></dd><!-- ENDIF -->
@@ -94,17 +87,12 @@
         <!-- ENDIF -->
       </dl>
     </div>
-    <span class="corners-bottom"><span></span></span></div>
   </div>
 
   <!-- IF SIGNATURE -->
   <div class="panel bg1">
-    <div class="inner"><span class="corners-top"><span></span></span>
-
       <h3>{L_SIGNATURE}</h3>
       <div class="signature">{SIGNATURE}</div>
-
-    <span class="corners-bottom"><span></span></span></div>
   </div>
   <!-- ENDIF -->
 </form>

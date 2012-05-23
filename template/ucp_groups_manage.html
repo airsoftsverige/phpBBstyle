@@ -5,8 +5,6 @@
 <form id="ucp" method="post" action="{S_UCP_ACTION}"{S_FORM_ENCTYPE}>
 
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
-  
   <p>{L_GROUPS_EXPLAIN}</p>
 
   <!-- IF S_EDIT -->
@@ -44,12 +42,9 @@
       <input name="group_type" type="hidden" value="{GROUP_TYPE_SPECIAL}" />
     <!-- ENDIF -->
     </fieldset>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
   <h3>{L_GROUP_SETTINGS_SAVE}</h3>
 
   <fieldset>
@@ -62,8 +57,6 @@
     <dd><select name="group_rank" id="group_rank">{S_RANK_OPTIONS}</select></dd>
   </dl>
   </fieldset>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <!-- INCLUDE ucp_avatar_options.html -->
@@ -158,8 +151,6 @@
       <!-- IF PAGINATION --><a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}">{S_ON_PAGE}</a> &bull; <span>{PAGINATION}</span><!-- ELSE -->{S_ON_PAGE}<!-- ENDIF -->
     </li>
   </ul>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <fieldset class="display-actions">  
@@ -169,8 +160,6 @@
 </fieldset>
 
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
-
   <h3>{L_ADD_USERS}</h3>
 
   <p>{L_ADD_USERS_UCP_EXPLAIN}</p>
@@ -189,8 +178,6 @@
     <dd><strong><a href="{U_FIND_USERNAME}" onclick="find_username(this.href); return false;">{L_FIND_USERNAME}</a></strong></dd>
   </dl>
   </fieldset>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <fieldset class="submit-buttons">
@@ -225,8 +212,6 @@
   <!-- ELSE -->
     <p><strong>{L_NO_LEADERS}</strong></p>
   <!-- ENDIF -->
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <!-- ENDIF -->

@@ -6,16 +6,12 @@
 
 <!-- IF S_FORUM_RULES -->
   <div class="rules">
-    <div class="inner"><span class="corners-top"><span></span></span>
-
     <!-- IF U_FORUM_RULES -->
       <a href="{U_FORUM_RULES}">{L_FORUM_RULES}</a>
     <!-- ELSE -->
       <strong class="rules-header">{L_FORUM_RULES}</strong>
       {FORUM_RULES}
     <!-- ENDIF -->
-
-    <span class="corners-bottom"><span></span></span></div>
   </div>
 <!-- ENDIF -->
 
@@ -65,9 +61,7 @@
 <!-- IF S_NO_READ_ACCESS -->
 
   <div class="panel">
-    <div class="inner"><span class="corners-top"><span></span></span>
     <strong>{L_NO_READ_ACCESS}</strong>
-    <span class="corners-bottom"><span></span></span></div>
   </div>
 
   <!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
@@ -75,8 +69,6 @@
     <form action="{S_LOGIN_ACTION}" method="post">
 
     <div class="panel">
-      <div class="inner"><span class="corners-top"><span></span></span>
-
       <div class="content">
         <h3><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF S_REGISTER_ENABLED -->&nbsp; &bull; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h3>
 
@@ -98,8 +90,6 @@
         {S_LOGIN_REDIRECT}
         </fieldset>
       </div>
-
-      <span class="corners-bottom"><span></span></span></div>
     </div>
 
     </form>
@@ -158,11 +148,7 @@
 <!-- BEGINELSE -->
   <!-- IF S_IS_POSTABLE -->
     <div class="panel">
-      <div class="inner"><span class="corners-top"><span></span></span>
-        
       <strong>{L_NO_TOPICS}</strong>
-      
-      <span class="corners-bottom"><span></span></span></div>
     </div>
   <!-- ENDIF -->
 <!-- END topicrow -->

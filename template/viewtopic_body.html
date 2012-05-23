@@ -16,27 +16,20 @@
 
 <!-- IF S_FORUM_RULES -->
   <div class="rules">
-    <div class="inner"><span class="corners-top"><span></span></span>
-
     <!-- IF U_FORUM_RULES -->
       <a href="{U_FORUM_RULES}">{L_FORUM_RULES}</a>
     <!-- ELSE -->
       <strong class="rules-header">{L_FORUM_RULES}</strong>
       {FORUM_RULES}
     <!-- ENDIF -->
-
-    <span class="corners-bottom"><span></span></span></div>
   </div>
 <!-- ENDIF -->
-
 <div class="topic-actions clearfix">
-
   <div class="buttons">
   <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
     <div class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->"><a href="{U_POST_REPLY_TOPIC}" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->"><span></span><!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED_SHORT}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF --></a></div>
   <!-- ENDIF -->
   </div>
-
   <!-- IF S_DISPLAY_SEARCHBOX -->
     <div class="search-box">
       <form method="post" id="topic-search" action="{S_SEARCHBOX_ACTION}">
@@ -49,22 +42,16 @@
       </form>
     </div>
   <!-- ENDIF -->
-
   <!-- IF PAGINATION or TOTAL_POSTS -->
     <div class="pagination">
       <!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
       <!-- IF PAGE_NUMBER --><!-- IF PAGINATION --> &bull; <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}">{PAGE_NUMBER}</a> &bull; <span>{PAGINATION}</span><!-- ELSE --> &bull; {PAGE_NUMBER}<!-- ENDIF --><!-- ENDIF -->
     </div>
   <!-- ENDIF -->
-
 </div>
-
 <!-- IF S_HAS_POLL -->
   <form method="post" action="{S_POLL_ACTION}">
-
   <div class="panel">
-    <div class="inner"><span class="corners-top"><span></span></span>
-
     <div class="content">
       <h2>{POLL_QUESTION}</h2>
       <p class="author">{L_POLL_LENGTH}<!-- IF S_CAN_VOTE and L_POLL_LENGTH --><br /><!-- ENDIF --><!-- IF S_CAN_VOTE -->{L_MAX_VOTES}<!-- ENDIF --></p>
@@ -101,13 +88,9 @@
       <!-- ENDIF -->
       </fieldset>
     </div>
-
-    <span class="corners-bottom"><span></span></span></div>
     {S_FORM_TOKEN}
     {S_HIDDEN_FIELDS}
   </div>
-
-
   </form>
   <hr />
 <!-- ENDIF -->

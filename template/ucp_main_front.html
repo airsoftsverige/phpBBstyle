@@ -3,10 +3,7 @@
 <h2>{L_TITLE}</h2>
 
 <div class="panel">
-  <div class="inner"><span class="corners-top"><span></span></span>
-
   <p>{L_UCP_WELCOME}</p>
-
   <!-- IF .topicrow -->
     <div class="forums-wrapper">
       <table class="forums">
@@ -35,9 +32,7 @@
       </table>
     </div>
   <!-- ENDIF -->
-
   <h3>{L_YOUR_DETAILS}</h3>
-
   <dl class="details">
     <dt>{L_JOINED}:</dt> <dd>{JOINED}</dd>
     <dt>{L_VISITED}:</dt> <dd>{LAST_VISIT_YOU}</dd>
@@ -46,8 +41,6 @@
     <!-- IF ACTIVE_TOPIC --><dt>{L_ACTIVE_IN_TOPIC}:</dt> <dd><strong><a href="{U_ACTIVE_TOPIC}">{ACTIVE_TOPIC}</a></strong><br />({ACTIVE_TOPIC_POSTS} / {ACTIVE_TOPIC_PCT})</dd><!-- ENDIF -->
     <!-- IF WARNINGS --><dt>{L_YOUR_WARNINGS}:</dt> <dd>{WARNING_IMG} {WARNINGS}</dd><!-- ENDIF -->
   </dl>
-
-  <span class="corners-bottom"><span></span></span></div>
 </div>
 
 <!-- INCLUDE ucp_footer.html -->
