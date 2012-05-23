@@ -4043,7 +4043,7 @@ input.disabled {
         max-width: 70%;
         margin: auto;
     }
-
+}
 /* Bonus things for large screens */
 @media (min-width: 1040px) {
 
