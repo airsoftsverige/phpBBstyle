@@ -3,7 +3,7 @@
 <h2>{PAGE_TITLE}</h2>
 
 <form method="post" action="{S_PROFILE_ACTION}" id="viewprofile">
-  <div class="panel bg1 <!-- IF S_ONLINE -->online<!-- ENDIF -->">
+  <div class="panel bg1 clearfix <!-- IF S_ONLINE -->online<!-- ENDIF -->">
     <!-- IF AVATAR_IMG -->
       <dl class="left-box" style="margin: 5px 0;">
         <dt class="avatar">{AVATAR_IMG}</dt>
@@ -48,7 +48,7 @@
     </dl>
   </div>
 
-  <div class="panel bg2">
+  <div class="panel bg2 clearfix">
     <div class="column1">
       <h3>{L_CONTACT_USER} {USERNAME}</h3>
       <dl class="details">
@@ -90,7 +90,7 @@
   </div>
 
   <!-- IF SIGNATURE -->
-  <div class="panel bg1">
+  <div class="panel bg1 clearfix">
       <h3>{L_SIGNATURE}</h3>
       <div class="signature">{SIGNATURE}</div>
   </div>

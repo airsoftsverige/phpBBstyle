@@ -1,7 +1,7 @@
 <!-- INCLUDE overall_header.html -->
 <h2>{L_SEND_EMAIL_USER} {USERNAME}</h2>
 <form method="post" action="{S_POST_ACTION}" id="post">
-<div class="panel">
+<div class="panel clearfix">
   <div class="content">
     <!-- IF ERROR_MESSAGE --><p class="error">{ERROR_MESSAGE}</p><!-- ENDIF -->
     <fieldset class="fields2">
@@ -42,7 +42,7 @@
   </div>
 </div>
 
-<div class="panel bg2">
+<div class="panel bg2 clearfix">
   <div class="content">
     <fieldset class="submit-buttons">
       <input type="submit" tabindex="6" name="submit" class="button1" value="{L_SEND_EMAIL}" />

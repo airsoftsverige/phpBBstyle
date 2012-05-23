@@ -320,7 +320,9 @@ p.right {
     -moz-border-radius: .5em;
     border-radius: .5em;
 }
-
+.panel.slim {
+    padding: .25em 1em;
+}
 .post {
     padding: 0 10px 5px 0;
     margin-bottom: .4em;
@@ -356,58 +358,12 @@ p.right {
     background-color: #eaeaea;
 }
 
-span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span {
-    font-size: 1px;
-    line-height: 1px;
-    display: block;
-    height: 5px;
-    background-repeat: no-repeat;
-}
-
-span.corners-top {
-    background-image: none;
-    background-position: 0 0;
-    margin: 0 -5px;
-}
-
-span.corners-top span {
-    background-image: none;
-    background-position: 100% 0;
-}
-
-span.corners-bottom {
-    background-image: none;
-    background-position: 0 100%;
-    margin: 0 -5px;
-    clear: both;
-}
-
-span.corners-bottom span {
-    background-image: none;
-    background-position: 100% 100%;
-}
-
-.headbg span.corners-bottom {
-    margin-bottom: -1px;
-}
-
-.post span.corners-top, .post span.corners-bottom, .panel span.corners-top, .panel span.corners-bottom, .navbar span.corners-top, .navbar span.corners-bottom {
-    margin: 0 -10px;
-}
-
-.rules span.corners-top {
-    margin: 0 -10px 5px -10px;
-}
-
-.rules span.corners-bottom {
-    margin: 5px -10px 0 -10px;
-}
-
 /* Horizontal lists
 ----------------------------------------*/
 ul.linklist {
     display: block;
     margin: 0;
+    padding: 0;
 }
 
 ul.linklist li {
@@ -2074,6 +2030,7 @@ ul.cplist {
 
 #cp-main ul.linklist {
     margin: 0;
+    padding: 0;
 }
 
 /* MCP Specific tweaks */
@@ -2218,48 +2175,11 @@ ul.cplist {
     background-color: #FFFFFF;
 }
 
-#cp-main span.corners-top, #cp-menu span.corners-top {
-    background-image: none;
-}
-
-#cp-main span.corners-top span, #cp-menu span.corners-top span {
-    background-image: none;
-}
-
-#cp-main span.corners-bottom, #cp-menu span.corners-bottom {
-    background-image: none;
-}
-
-#cp-main span.corners-bottom span, #cp-menu span.corners-bottom span {
-    background-image: none;
-}
-
-/* Topicreview */
-#cp-main .panel #topicreview span.corners-top, #cp-menu .panel #topicreview span.corners-top {
-    background-image: none;
-}
-
-#cp-main .panel #topicreview span.corners-top span, #cp-menu .panel #topicreview span.corners-top span {
-    background-image: none;
-}
-
-#cp-main .panel #topicreview span.corners-bottom, #cp-menu .panel #topicreview span.corners-bottom {
-    background-image: none;
-}
-
-#cp-main .panel #topicreview span.corners-bottom span, #cp-menu .panel #topicreview span.corners-bottom span {
-    background-image: none;
-}
-
 /* Friends list */
 .cp-mini {
     background-color: #f9f9f9;
     padding: 0 5px;
     margin: 10px 15px 10px 5px;
-}
-
-.cp-mini span.corners-top, .cp-mini span.corners-bottom {
-    margin: 0 -5px;
 }
 
 dl.mini dt {
@@ -2775,8 +2695,6 @@ tweaks required due to its poor CSS support.
 
 * html table, * html select, * html input { font-size: 100%; }
 * html hr { margin: 0; }
-* html span.corners-top, * html span.corners-bottom { background-image: url("{T_THEME_PATH}/images/corners_left.gif"); }
-* html span.corners-top span, * html span.corners-bottom span { background-image: url("{T_THEME_PATH}/images/corners_right.gif"); }
 
 table.table1 {
     width: 99%;    /* IE < 6 browsers */
@@ -2922,7 +2840,6 @@ hr.dashed {
     background-color: #eef0f1;
     color: #666;
 }
-
 .post:target .content {
     color: #000000;
 }
@@ -3638,40 +3555,6 @@ ul.cplist {
 #cp-main .pm {
     background-color: #FFFFFF;
 }
-
-#cp-main span.corners-top, #cp-menu span.corners-top {
-    background-image: url("{T_THEME_PATH}/images/corners_left2.gif");
-}
-
-#cp-main span.corners-top span, #cp-menu span.corners-top span {
-    background-image: url("{T_THEME_PATH}/images/corners_right2.gif");
-}
-
-#cp-main span.corners-bottom, #cp-menu span.corners-bottom {
-    background-image: url("{T_THEME_PATH}/images/corners_left2.gif");
-}
-
-#cp-main span.corners-bottom span, #cp-menu span.corners-bottom span {
-    background-image: url("{T_THEME_PATH}/images/corners_right2.gif");
-}
-
-/* Topicreview */
-#cp-main .panel #topicreview span.corners-top, #cp-menu .panel #topicreview span.corners-top {
-    background-image: url("{T_THEME_PATH}/images/corners_left.gif");
-}
-
-#cp-main .panel #topicreview span.corners-top span, #cp-menu .panel #topicreview span.corners-top span {
-    background-image: url("{T_THEME_PATH}/images/corners_right.gif");
-}
-
-#cp-main .panel #topicreview span.corners-bottom, #cp-menu .panel #topicreview span.corners-bottom {
-    background-image: url("{T_THEME_PATH}/images/corners_left.gif");
-}
-
-#cp-main .panel #topicreview span.corners-bottom span, #cp-menu .panel #topicreview span.corners-bottom span {
-    background-image: url("{T_THEME_PATH}/images/corners_right.gif");
-}
-
 /* Friends list */
 .cp-mini {
     background-color: #f1f4f6;
