@@ -4034,7 +4034,10 @@ input.disabled {
         border-top-right-radius: 4px;
     }
     /* Banners */
-   .banners > .banner,
+    .banners {
+        height: 90px;
+    }
+    .banners > .banner,
     .banners > .banner img {
         width: 728px !important;
         height: 90px !important;
