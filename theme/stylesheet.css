@@ -656,10 +656,13 @@ li.reported:hover {
 div.rules {
     background-color: #ececec;
     color: #bcbcbc;
-    padding: 0 10px;
-    margin-bottom: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
     line-height: 1.3em;
     font-size: 1.1em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
 }
 
 .rules-header {
@@ -668,14 +671,14 @@ div.rules {
 }
 
 div.rules ul, div.rules ol {
-    margin-left: 20px;
+    margin-left: 1em;
 }
 
 p.rules {
     background-color: #f3dddd;
     border: 1px solid #deb7b7;
     background-image: none;
-    padding: 5px 10px;
+    padding: .5em 1em;
 }
 
 p.rules img {
