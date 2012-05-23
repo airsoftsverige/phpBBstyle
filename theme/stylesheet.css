@@ -1123,9 +1123,6 @@ div[class].topic-actions {
     max-width: 100%;
     height: auto;
 }
-.search .postbody {
-    width: 73%
-}
 
 /* Topic review panel
 ----------------------------------------*/
@@ -1672,11 +1669,6 @@ fieldset.polls dd div {
     background-image: none;
     background-position: 100% 0;
     background-repeat: no-repeat;
-}
-
-/* Poster profile used by search*/
-.search .postprofile {
-    width: 26%;
 }
 
 /* pm list in compose message if mass pm is enabled */
