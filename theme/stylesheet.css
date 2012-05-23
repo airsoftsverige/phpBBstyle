@@ -3836,6 +3836,7 @@ input.disabled {
 }
 .banners .banner {
     margin: 0 auto;
+    background: #b8bab2;
 }
 .banners > .banner, 
 .banners > .banner img {
@@ -4036,6 +4037,10 @@ input.disabled {
     /* Banners */
     .banners {
         height: 90px;
+        
+    }
+    .banners .banner {
+        background: #b8bab2 url("{T_THEME_PATH}/images/banner_bg.png") no-repeat;
     }
     .banners > .banner,
     .banners > .banner img {
