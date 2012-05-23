@@ -3839,11 +3839,11 @@ input.disabled {
 }
 .banners > .banner, 
 .banners > .banner img {
-    width: 100%;
-    height: auto;
-    max-width: 728px;
-    max-height: 90px;
-    min-width: 320px;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 728px !important;
+    max-height: 90px !important;
+    min-width: 320px !important;
 }
 /*
  * Tacked on Responsive!
@@ -4034,9 +4034,10 @@ input.disabled {
         border-top-right-radius: 4px;
     }
     /* Banners */
+   .banners > .banner,
     .banners > .banner img {
-        width: 728px;
-        height: 90px;
+        width: 728px !important;
+        height: 90px !important;
     }
     #wrapper, #footer-inner {
         min-width: 980px;
