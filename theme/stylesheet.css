@@ -99,6 +99,7 @@ nav ul {
 #wrapper, #footer-inner {
     min-width: 320px;
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -3932,7 +3933,6 @@ input.disabled {
         min-width: 980px;
         max-width: 70%;
         margin: auto;
-        overflow: hidden;
     }
 }
 /* Bonus things for large screens */
