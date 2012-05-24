@@ -11,16 +11,16 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width">
     
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{T_THEME_PATH}/images/touch/apple-touch-icon-144x144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{T_THEME_PATH}/images/touch/apple-touch-icon-114x114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{T_THEME_PATH}/images/touch/apple-touch-icon-72x72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" href="{T_THEME_PATH}/images/touch/apple-touch-icon-57x57-precomposed.png" />
-    <link rel="shortcut icon" href="{T_THEME_PATH}/images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{T_THEME_PATH}/images/touch/apple-touch-icon-144x144-precomposed.png?v=1" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{T_THEME_PATH}/images/touch/apple-touch-icon-114x114-precomposed.png?v=1" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{T_THEME_PATH}/images/touch/apple-touch-icon-72x72-precomposed.png?v=1" />
+    <link rel="apple-touch-icon-precomposed" href="{T_THEME_PATH}/images/touch/apple-touch-icon-57x57-precomposed.png?v=1" />
+    <link rel="shortcut icon" href="{T_THEME_PATH}/images/apple-touch-icon.png?v=1" />
 
   <!-- iOS web app, delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <script>(function(){var p,l,r=window.devicePixelRatio;if(navigator.platform==="iPad"){p=r===2?"{T_THEME_PATH}/images/startup/startup-tablet-portrait-retina.png":"{T_THEME_PATH}/images/startup/startup-tablet-portrait.png";l=r===2?"{T_THEME_PATH}/images/startup/startup-tablet-landscape-retina.png":"{T_THEME_PATH}/images/startup/startup-tablet-landscape.png";document.write('<link rel="apple-touch-startup-image" href="'+l+'" media="screen and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="'+p+'" media="screen and (orientation: portrait)"/>');}else{p=r===2?"{T_THEME_PATH}/images/startup/startup-retina.png":"{T_THEME_PATH}/images/startup/startup.png";document.write('<link rel="apple-touch-startup-image" href="'+p+'"/>');}})()</script>
+  <script>(function(){var p,l,r=window.devicePixelRatio;if(navigator.platform==="iPad"){p=r===2?"{T_THEME_PATH}/images/startup/startup-tablet-portrait-retina.png?v=1":"{T_THEME_PATH}/images/startup/startup-tablet-portrait.png?v=1";l=r===2?"{T_THEME_PATH}/images/startup/startup-tablet-landscape-retina.png?v=1":"{T_THEME_PATH}/images/startup/startup-tablet-landscape.png?v=1";document.write('<link rel="apple-touch-startup-image" href="'+l+'" media="screen and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="'+p+'" media="screen and (orientation: portrait)"/>');}else{p=r===2?"{T_THEME_PATH}/images/startup/startup-retina.png?v=1":"{T_THEME_PATH}/images/startup/startup.png?v=1";document.write('<link rel="apple-touch-startup-image" href="'+p+'"/>');}})()</script>
   
   <!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
   <!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
@@ -33,9 +33,9 @@
     <meta name="copyright" content="2000, 2002, 2005, 2007 phpBB Group">
     {META}
     <title>{SITENAME} &bull; <!-- IF S_IN_MCP -->{L_MCP} &bull; <!-- ELSEIF S_IN_UCP -->{L_UCP} &bull; <!-- ENDIF -->{PAGE_TITLE}</title>
-    <link href="{T_THEME_PATH}/print.css" rel="stylesheet" type="text/css" media="print" title="printonly">
-    <link href="{T_STYLESHEET_LINK}" rel="stylesheet" type="text/css" media="screen, projection"><!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
-    <link href="{T_THEME_PATH}/bidi.css" rel="stylesheet" type="text/css" media="screen, projection"><!-- ENDIF --><!-- IF S_ENABLE_FEEDS --><!-- IF S_ENABLE_FEEDS_OVERALL -->
+    <link href="{T_THEME_PATH}/print.css?v=1" rel="stylesheet" type="text/css" media="print" title="printonly">
+    <link href="{T_STYLESHEET_LINK}?v=1" rel="stylesheet" type="text/css" media="screen, projection"><!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
+    <link href="{T_THEME_PATH}/bidi.css?v=1" rel="stylesheet" type="text/css" media="screen, projection"><!-- ENDIF --><!-- IF S_ENABLE_FEEDS --><!-- IF S_ENABLE_FEEDS_OVERALL -->
     <link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{U_FEED}"><!-- ENDIF --><!-- IF S_ENABLE_FEEDS_NEWS -->
     <link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{U_FEED}?mode=news"><!-- ENDIF --><!-- IF S_ENABLE_FEEDS_FORUMS -->
     <link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_ALL_FORUMS}" href="{U_FEED}?mode=forums"><!-- ENDIF --><!-- IF S_ENABLE_FEEDS_TOPICS -->
@@ -83,7 +83,7 @@
         }
         // ]]>
     </script>
-    <script type="text/javascript" src="{T_TEMPLATE_PATH}/js/forum_fn.js"></script>
+    <script type="text/javascript" src="{T_TEMPLATE_PATH}/js/forum_fn.js?v=1"></script>
     <!-- Ads -->
     <script type='text/javascript'>
         var googletag = googletag || {};

@@ -222,7 +222,7 @@ nav ul {
 }
 
 .feed {
-    background: url("{T_THEME_PATH}/images/feed_small.gif") right center no-repeat;
+    background: url("{T_THEME_PATH}/images/feed_small.gif?v=1") right center no-repeat;
 }
 /* Basic styles */
 body {
@@ -2863,11 +2863,11 @@ hr.dashed {
 }
 
 span.corners-top, span.corners-bottom {
-    background-image: url("{T_THEME_PATH}/images/corners_left.png");
+    background-image: url("{T_THEME_PATH}/images/corners_left.png?v=1");
 }
 
 span.corners-top span, span.corners-bottom span {
-    background-image: url("{T_THEME_PATH}/images/corners_right.png");
+    background-image: url("{T_THEME_PATH}/images/corners_right.png?v=1");
 }
 
 /* Horizontal lists
@@ -2954,7 +2954,7 @@ dl.details dd {
 
 /* Pagination in viewforum for multipage topics */
 .row .pagination {
-    background-image: url("{T_THEME_PATH}/images/icon_pages.gif");
+    background-image: url("{T_THEME_PATH}/images/icon_pages.gif?v=1");
 }
 
 .row .pagination span a, li.pagination span a {
@@ -3067,10 +3067,10 @@ a.top2 {
 }
 
 /* Arrow links    */
-a.up    { background-image: url("{T_THEME_PATH}/images/arrow_up.gif") }
-a.down    { background-image: url("{T_THEME_PATH}/images/arrow_down.gif") }
-a.left    { background-image: url("{T_THEME_PATH}/images/arrow_left.gif") }
-a.right    { background-image: url("{T_THEME_PATH}/images/arrow_right.gif") }
+a.up    { background-image: url("{T_THEME_PATH}/images/arrow_up.gif?v=1") }
+a.down    { background-image: url("{T_THEME_PATH}/images/arrow_down.gif?v=1") }
+a.left    { background-image: url("{T_THEME_PATH}/images/arrow_left.gif?v=1") }
+a.right    { background-image: url("{T_THEME_PATH}/images/arrow_right.gif?v=1") }
 
 a.up:hover {
     background-color: transparent;
@@ -3178,12 +3178,12 @@ dl.faq dt {
 /* Quote block */
 blockquote {
     background-color: #f9f9f9;
-    background-image: url("{T_THEME_PATH}/images/quote.gif");
+    background-image: url("{T_THEME_PATH}/images/quote.gif?v=1");
     border-color: #ddd;
 }
 
 .rtl blockquote {
-    background-image: url("{T_THEME_PATH}/images/quote_rtl.gif");
+    background-image: url("{T_THEME_PATH}/images/quote_rtl.gif?v=1");
 }
 
 blockquote blockquote {
@@ -3362,7 +3362,7 @@ fieldset.polls dd div {
 }
 
 .postprofile.online {
-/*    background-image: url("{T_IMAGESET_LANG_PATH}/icon_user_online.gif");*/
+/*    background-image: url("{T_IMAGESET_LANG_PATH}/icon_user_online.gif?v=1");*/
 }
 
 .post .postprofile.online {
@@ -3395,28 +3395,28 @@ Colours and backgrounds for buttons.css
 .forwardpm-icon span    { background-image: url("{IMG_BUTTON_PM_FORWARD_SRC}") ;}
 
 a.print {
-    background-image: url("{T_THEME_PATH}/images/icon_print.png");
+    background-image: url("{T_THEME_PATH}/images/icon_print.png?v=1");
 }
 
 a.sendemail {
-    background-image: url("{T_THEME_PATH}/images/icon_sendemail.png");
+    background-image: url("{T_THEME_PATH}/images/icon_sendemail.png?v=1");
 }
 
 /* Icon images
 ---------------------------------------- */
-.sitehome            { background-image: url("{T_THEME_PATH}/images/icon_home.gif"); }
-.icon-faq            { background-image: url("{T_THEME_PATH}/images/icon_faq.gif"); }
-.icon-members          { background-image: url("{T_THEME_PATH}/images/icon_members.gif"); }
-.icon-home            { background-image: url("{T_THEME_PATH}/images/icon_home.gif"); }
-.icon-ucp            { background-image: url("{T_THEME_PATH}/images/icon_ucp.gif"); }
-.icon-register          { background-image: url("{T_THEME_PATH}/images/icon_register.gif"); }
-.icon-logout          { background-image: url("{T_THEME_PATH}/images/icon_logout.gif"); }
-.icon-bookmark          { background-image: url("{T_THEME_PATH}/images/icon_bookmark.gif"); }
-.icon-bump            { background-image: url("{T_THEME_PATH}/images/icon_bump.gif"); }
-.icon-subscribe          { background-image: url("{T_THEME_PATH}/images/icon_subscribe.gif"); }
-.icon-unsubscribe        { background-image: url("{T_THEME_PATH}/images/icon_unsubscribe.gif"); }
-.icon-pages            { background-image: url("{T_THEME_PATH}/images/icon_pages.gif"); }
-.icon-search          { background-image: url("{T_THEME_PATH}/images/icon_search.gif"); }
+.sitehome            { background-image: url("{T_THEME_PATH}/images/icon_home.gif?v=1"); }
+.icon-faq            { background-image: url("{T_THEME_PATH}/images/icon_faq.gif?v=1"); }
+.icon-members          { background-image: url("{T_THEME_PATH}/images/icon_members.gif?v=1"); }
+.icon-home            { background-image: url("{T_THEME_PATH}/images/icon_home.gif?v=1"); }
+.icon-ucp            { background-image: url("{T_THEME_PATH}/images/icon_ucp.gif?v=1"); }
+.icon-register          { background-image: url("{T_THEME_PATH}/images/icon_register.gif?v=1"); }
+.icon-logout          { background-image: url("{T_THEME_PATH}/images/icon_logout.gif?v=1"); }
+.icon-bookmark          { background-image: url("{T_THEME_PATH}/images/icon_bookmark.gif?v=1"); }
+.icon-bump            { background-image: url("{T_THEME_PATH}/images/icon_bump.gif?v=1"); }
+.icon-subscribe          { background-image: url("{T_THEME_PATH}/images/icon_subscribe.gif?v=1"); }
+.icon-unsubscribe        { background-image: url("{T_THEME_PATH}/images/icon_unsubscribe.gif?v=1"); }
+.icon-pages            { background-image: url("{T_THEME_PATH}/images/icon_pages.gif?v=1"); }
+.icon-search          { background-image: url("{T_THEME_PATH}/images/icon_search.gif?v=1"); }
 
 /* Profile & navigation icons */
 .email-icon, .email-icon a    { background-image: url("{IMG_ICON_CONTACT_EMAIL_SRC}"); }
@@ -3514,11 +3514,11 @@ ul.cplist {
 #navigation a {
     color: #333;
     background-color: #d1d8de;
-    background-image: url("{T_THEME_PATH}/images/bg_menu.gif");
+    background-image: url("{T_THEME_PATH}/images/bg_menu.gif?v=1");
 }
 
 .rtl #navigation a {
-    background-image: url("{T_THEME_PATH}/images/bg_menu_rtl.gif");
+    background-image: url("{T_THEME_PATH}/images/bg_menu_rtl.gif?v=1");
     background-position: 0 100%;
 }
 
@@ -3674,7 +3674,7 @@ fieldset.quick-login input.inputbox {
 a.button1, input.button1, input.button3, a.button2, input.button2 {
     color: #000;
     background-color: #FAFAFA;
-    background-image: url("{T_THEME_PATH}/images/bg_button.gif");
+    background-image: url("{T_THEME_PATH}/images/bg_button.gif?v=1");
 }
 
 a.button1, input.button1 {
@@ -3702,7 +3702,7 @@ a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, inpu
 }
 
 input.search {
-    background: #fff url("{T_THEME_PATH}/images/icon_textbox_search.gif") 1px 3px no-repeat;
+    background: #fff url("{T_THEME_PATH}/images/icon_textbox_search.gif?v=1") 1px 3px no-repeat;
 }
 
 input.disabled {
@@ -3842,7 +3842,7 @@ input.disabled {
         height: 64px;
     }
     #illustration {
-        background: url("{T_THEME_PATH}/images/illustration.png") top right no-repeat;
+        background: url("{T_THEME_PATH}/images/illustration.png?v=1") top right no-repeat;
         height: 96px;
         margin: -6px auto 0;
     }
@@ -3922,7 +3922,7 @@ input.disabled {
         
     }
     .banners .banner {
-        background: #b8bab2 url("{T_THEME_PATH}/images/banner_bg.png") no-repeat;
+        background: #b8bab2 url("{T_THEME_PATH}/images/banner_bg.png?v=1") no-repeat;
     }
     .banners > .banner,
     .banners > .banner img {
