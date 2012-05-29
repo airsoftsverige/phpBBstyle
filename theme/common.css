@@ -235,7 +235,7 @@ p.right {
 }
 
 .feed {
-	background: url("{T_THEME_PATH}/images/feed_small.gif") right center no-repeat;
+	background: url("{T_THEME_PATH}/images/feed_small.png") right center no-repeat;
 }
 
 /* Round cornered boxes and backgrounds

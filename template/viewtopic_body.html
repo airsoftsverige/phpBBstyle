@@ -27,7 +27,8 @@
 <div class="topic-actions clearfix">
   <div class="buttons">
   <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-    <div class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->"><a href="{U_POST_REPLY_TOPIC}" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->"><span></span><!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED_SHORT}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF --></a></div>
+    <a class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->" href="{U_POST_REPLY_TOPIC}" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->"><!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED_SHORT}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF --></a>
+    <!-- IF U_BUMP_TOPIC --><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}">{L_BUMP_TOPIC}</a><!-- ENDIF -->
   <!-- ENDIF -->
   </div>
   <!-- IF S_DISPLAY_SEARCHBOX -->
@@ -188,7 +189,7 @@
         </div>
       <!-- ENDIF -->
 
-      <!-- IF postrow.BUMPED_MESSAGE --><div class="notice"><br /><br />{postrow.BUMPED_MESSAGE}</div><!-- ENDIF -->
+      <!-- IF postrow.BUMPED_MESSAGE --><div class="notice">{postrow.BUMPED_MESSAGE}</div><!-- ENDIF -->
       <!-- IF postrow.SIGNATURE --><div id="sig{postrow.POST_ID}" class="signature">{postrow.SIGNATURE}</div><!-- ENDIF -->
     <!-- ENDIF -->
 
@@ -219,7 +220,10 @@
 <div class="topic-actions">
   <div class="buttons">
   <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-    <div class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->"><a href="{U_POST_REPLY_TOPIC}" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->"><span></span><!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED_SHORT}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF --></a></div>
+    <a class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->" href="{U_POST_REPLY_TOPIC}" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->"><!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED_SHORT} <img src="{T_THEME_PATH}/images/icon_locked.png?v=1"><!-- ELSE -->{L_POST_REPLY} <img src="{T_THEME_PATH}/images/icon_reply.png?v=1"><!-- ENDIF --></a>
+    <!-- IF U_BUMP_TOPIC --><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}">{L_BUMP_TOPIC} <img src="{T_THEME_PATH}/images/icon_bump.png?v=1"></a><!-- ENDIF -->
+    <!-- IF U_WATCH_TOPIC --><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}">{L_WATCH_TOPIC}  <img src="{T_THEME_PATH}/images/icon_<!-- IF S_WATCHING_TOPIC -->unsubscribe<!-- ELSE -->subscribe<!-- ENDIF -->.png?v=1"></a><!-- ENDIF -->
+    <!-- IF U_BOOKMARK_TOPIC --><a href="{U_BOOKMARK_TOPIC}" title="{L_BOOKMARK_TOPIC}">{L_BOOKMARK_TOPIC} <img src="{T_THEME_PATH}/images/icon_bookmark.png?v=1"></a><!-- ENDIF -->
   <!-- ENDIF -->
   </div>
 

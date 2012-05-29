@@ -612,10 +612,10 @@ a.sendemail {
 .icon-ucp						{ background-image: url("{T_THEME_PATH}/images/icon_ucp.gif"); }
 .icon-register					{ background-image: url("{T_THEME_PATH}/images/icon_register.gif"); }
 .icon-logout					{ background-image: url("{T_THEME_PATH}/images/icon_logout.gif"); }
-.icon-bookmark					{ background-image: url("{T_THEME_PATH}/images/icon_bookmark.gif"); }
-.icon-bump						{ background-image: url("{T_THEME_PATH}/images/icon_bump.gif"); }
-.icon-subscribe					{ background-image: url("{T_THEME_PATH}/images/icon_subscribe.gif"); }
-.icon-unsubscribe				{ background-image: url("{T_THEME_PATH}/images/icon_unsubscribe.gif"); }
+.icon-bookmark					{ background-image: url("{T_THEME_PATH}/images/icon_bookmark.png"); }
+.icon-bump						{ background-image: url("{T_THEME_PATH}/images/icon_bump.png"); }
+.icon-subscribe					{ background-image: url("{T_THEME_PATH}/images/icon_subscribe.png"); }
+.icon-unsubscribe				{ background-image: url("{T_THEME_PATH}/images/icon_unsubscribe.png"); }
 .icon-pages						{ background-image: url("{T_THEME_PATH}/images/icon_pages.gif"); }
 .icon-search					{ background-image: url("{T_THEME_PATH}/images/icon_search.gif"); }
 
@@ -715,11 +715,11 @@ ul.cplist {
 #navigation a {
 	color: #333;
 	background-color: #d1d8de;
-	background-image: url("{T_THEME_PATH}/images/bg_menu.gif");
+	background-image: url("{T_THEME_PATH}/images/bg_menu.png");
 }
 
 .rtl #navigation a {
-	background-image: url("{T_THEME_PATH}/images/bg_menu_rtl.gif");
+	background-image: url("{T_THEME_PATH}/images/bg_menu_rtl.png");
 	background-position: 0 100%;
 }
 
