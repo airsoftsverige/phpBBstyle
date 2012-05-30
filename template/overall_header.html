@@ -103,7 +103,6 @@
     </script>
 </head>
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}"><!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<div id="notice"><span>Välkommen till nya AirsoftSverige! Läs mer i <a href="http://new.airsoftsverige.com/forum/viewtopic.php?f=31&t=624">den här tråden</a>.</span> <span>Gamla forumet finns kvar på: <a href="http://old.airsoftsverige.com/">http://old.airsoftsverige.com/</a></span></div>
 <div id="wrapper">
   <div id="header">
     <nav id="account">
@@ -119,7 +118,6 @@
             <!-- IF U_ACP --> <li><a href="{U_ACP}" title="{L_ACP}">{L_ACP}</a></li><!-- ENDIF -->
             <li><a href="{U_PROFILE}" title="{L_PROFILE}" accesskey="u">{L_PROFILE}</a></li>
             <!-- IF S_DISPLAY_PM --><li><a href="{U_PRIVATEMSGS}" title="{L_PRIVATE_MESSAGES}">{PRIVATE_MESSAGE_INFO}</a></li> <!-- ENDIF -->
-            <!-- IF S_DISPLAY_SEARCH --><li><a href="{U_SEARCH_SELF}" title="{L_SEARCH_SELF}">{L_SEARCH_SELF}</a></li> <!-- ENDIF -->
           <!-- ELSE -->
             <!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) --><li><a href="{U_REGISTER}" title="{L_REGISTER}">{L_REGISTER}</a></li><!-- ENDIF -->
           <!-- ENDIF -->
@@ -131,9 +129,9 @@
     
     <div id="illustration">
       <div id="site-description">
+        <a href="{BOARD_URL}" title="{L_INDEX}" class="logo"><img src="{T_THEME_PATH}/images/logo.png?v=3" title="{SITENAME}"></a>
         <h1><a href="{BOARD_URL}" title="{L_INDEX}">{SITENAME}</a></h1>
         <p><a href="{BOARD_URL}" title="{L_INDEX}">{SITE_DESCRIPTION}</a></p>
-        <a href="{BOARD_URL}" title="{L_INDEX}" class="logo"><img src="{T_THEME_PATH}/images/logo.png?v=2" title="{SITENAME}"></a>
       </div>
     </div>
     

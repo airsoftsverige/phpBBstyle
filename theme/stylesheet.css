@@ -3898,7 +3898,7 @@ input.disabled {
         margin: -6px auto 0;
     }
     #site-description {
-        padding: 24px 0 0 64px;
+        padding: 27px 0 0 83px;
         margin: 0;
     }
     #site-description .logo {
@@ -3909,7 +3909,7 @@ input.disabled {
         left: 0;
     }
     #site-description .logo img {
-        width: 48px;
+        width: 64px;
         height: 48px;
     }
     /* Temporaru solution */
@@ -3918,7 +3918,6 @@ input.disabled {
         height: auto;
         line-height: 24px;
         padding: 0 22px;
-        overflow-x: auto;
     }
     .postprofile {
         width: 100px;
@@ -3976,7 +3975,7 @@ input.disabled {
     /* Styles */
     #site-description {
         margin: 0;
-        padding: 24px 0 0 82px;
+        padding: 22px 0 0 110px;
     }
     #site-description .logo {
         display: block;
@@ -3986,11 +3985,10 @@ input.disabled {
         left: 0;
     }
     #site-description .logo img {
-        width: 64px;
+        width: 85px;
         height: 64px;
     }
     #illustration {
-        background: url("{T_THEME_PATH}/images/illustration.png?v=2") top right no-repeat;
         height: 96px;
         margin: -6px auto 0;
     }
