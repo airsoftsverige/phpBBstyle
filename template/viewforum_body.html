@@ -27,12 +27,16 @@
 
 <!-- IF S_DISPLAY_POST_INFO or PAGINATION or TOTAL_POSTS or TOTAL_TOPICS -->
   <div class="topic-actions" <!-- IF S_HAS_SUBFORUM -->style="margin-top: 2em;"<!-- ENDIF -->>
-  <!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
+  
     <div class="buttons">
+    <!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
         <a class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->post-icon<!-- ENDIF -->" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->" href="{U_POST_NEW_TOPIC}"><!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED} <img src="{T_THEME_PATH}/images/icon_locked.png?v=1"><!-- ELSE -->{L_POST_TOPIC} <img src="{T_THEME_PATH}/images/icon_new.png?v=1"><!-- ENDIF --></a>
+    <!-- ENDIF -->
+    <!-- IF not S_IS_BOT -->
         <!-- IF S_WATCH_FORUM_LINK --><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE} <img src="{T_THEME_PATH}/images/icon_<!-- IF S_WATCHING_FORUM -->unsubscribe<!-- ELSE -->subscribe<!-- ENDIF -->.png?v=1"></a><!-- ENDIF -->
+    <!-- ENDIF -->
     </div>
-  <!-- ENDIF -->
+  
 
   <!-- IF S_DISPLAY_SEARCHBOX -->
     <div class="search-box">
@@ -170,12 +174,14 @@
 
 <!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
   <div class="topic-actions">
-    <!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
     <div class="buttons">
+    <!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
         <a class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->post-icon<!-- ENDIF -->" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->" href="{U_POST_NEW_TOPIC}"><!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED} <img src="{T_THEME_PATH}/images/icon_locked.png?v=1"><!-- ELSE -->{L_POST_TOPIC} <img src="{T_THEME_PATH}/images/icon_new.png?v=1"><!-- ENDIF --></a>
+    <!-- ENDIF -->
+    <!-- IF not S_IS_BOT -->
         <!-- IF S_WATCH_FORUM_LINK --><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE} <img src="{T_THEME_PATH}/images/icon_<!-- IF S_WATCHING_FORUM -->unsubscribe<!-- ELSE -->subscribe<!-- ENDIF -->.png?v=1"></a><!-- ENDIF -->
+    <!-- ENDIF -->
     </div>
-<!-- ENDIF -->
 
     <!-- IF PAGINATION or TOTAL_POSTS or TOTAL_TOPICS -->
     <div class="pagination">
