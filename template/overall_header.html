@@ -105,7 +105,7 @@
 <body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}"><!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="wrapper">
   <div id="header">
-    <nav id="account">
+    <nav id="account" class="clearfix">
       <ul class="leftside">
         <li><!-- IF S_USER_LOGGED_IN -->{LAST_VISIT_DATE}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --></li>
       </ul>
@@ -127,15 +127,13 @@
       <!-- ENDIF -->
     </nav>
     
-    <div id="illustration">
       <div id="site-description">
         <a href="{BOARD_URL}" title="{L_INDEX}" class="logo"><img src="{T_THEME_PATH}/images/logo.png?v=3" title="{SITENAME}"></a>
         <h1><a href="{BOARD_URL}" title="{L_INDEX}">{SITENAME}</a></h1>
         <p><a href="{BOARD_URL}" title="{L_INDEX}">{SITE_DESCRIPTION}</a></p>
       </div>
-    </div>
     
-    <nav id="main-navigation">
+    <nav id="main-navigation" class="clearfix">
       <ul id="primary-navigation" class="leftside">
         <li><a href="{U_INDEX}" title="{L_INDEX}">{L_INDEX}</a></li>
         <li><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>
@@ -161,12 +159,10 @@
       <!-- ENDIF -->
     </nav>
   </div>
-  <div class="banners top">
-    <!-- Enhet1 -->
     <div id="div-gpt-ad-1337771108139-0" class="banner">
         <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1337771108139-0'); });</script>
+        <img src="/forum/images/banner.png">
     </div>
-  </div>
   <div id="container">
     <!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
       <div id="information" class="rules">
