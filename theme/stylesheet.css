@@ -3873,6 +3873,58 @@ input.disabled {
 /*
  * Tacked on Responsive!
  */
+#site-description {
+    margin: 0;
+    height: 90px;
+}
+#site-description .logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#site-description .logo img {
+    width: 85px;
+    height: 64px;
+    padding: 13px;
+}
+#site-description h1 {
+    display: block;
+    margin: 0 0 0 111px;
+    padding: 24px 0 0 0;
+    line-height: 1em;
+}
+#site-description p {
+    display: block;
+    margin: 0 0 0 109px;
+}
+#account, #main-navigation {
+    background: #617179; /* Old browsers */
+    background: -moz-linear-gradient(top,    #617179 0%, #727E82 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#617179), color-stop(100%,#727E82)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,    #617179 0%,#727E82 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,    #617179 0%,#727E82 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,    #617179 0%,#727E82 100%); /* IE10+ */
+    background: linear-gradient(top,    #617179 0%,#727E82 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617179', endColorstr='#727E82',GradientType=0 ); /* IE6-9 */
+    height: 32px;
+    line-height: 32px;
+    padding: 0 22px;
+}
+#account .rightside {
+    display: block;
+}
+#account li, #primary-navigation li {
+    font-size: 1.1em;
+}
+#primary-navigation li {
+    border-right: 1px solid #56656D;
+    padding-right: 14px;
+}
+#primary-navigation li + li {
+    border-left: 1px solid #848d8c;
+    padding-left: 14px;
+}
 /* iPhone portrait*/
 @media (min-width: 320px) {
 /*    #account {
