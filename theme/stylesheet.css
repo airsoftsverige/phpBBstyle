@@ -90,6 +90,7 @@ nav ul {
 
 #container {
     margin: 5px 0 20px;
+    position: relative;
 }
 
 #footer {
@@ -171,8 +172,10 @@ nav ul {
 #site-description p {
     margin-left: 0;
     line-height: 24px;
-    font-size: 1.6em;
+    font-size: 1.4em;
+    font-weight: bold;
     color: #535353;
+    padding: 0 0 0 24px;
     display: none;
 }
 #site-description a {
@@ -3889,24 +3892,15 @@ input.disabled {
     }
     #site-description {
         height: 64px;
+        background: url("{T_THEME_PATH}/images/logo_small.png?v=1") no-repeat; 
+
     }
-    #site-description h1 {
+    #site-description h1 a {
         line-height: 64px;
         display: block;
-        margin: 0 0 0 80px;
+        padding: 0 0 0 12px;
     }
-    #site-description .logo {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    #site-description .logo img {
-        width: 64px;
-        height: 48px;
-        padding: 8px;
-    }
-    /* Temporaru solution */
+    /* Temporary solution */
     #account, #main-navigation {
         background: #617179; /* Old browsers */
         height: auto;
@@ -3954,9 +3948,6 @@ input.disabled {
     #account, #main-navigation {
         height: 32px;
     }
-    #site-description {
-/*        padding: 27px 0 0 83px;*/
-    }
 }
 /* iPad portrait */
 @media (min-width: 768px) {
@@ -3974,29 +3965,16 @@ input.disabled {
     #site-description {
         margin: 0;
         height: 90px;
-/*        padding: 22px 0 0 110px;*/
+        background: url("{T_THEME_PATH}/images/logo.png?v=3") no-repeat; 
     }
-    #site-description .logo {
+    #site-description h1 a {
         display: block;
-        position: absolute;
-/*        padding: 13px 6px 13px 12px;*/
-        top: 0;
-        left: 0;
-    }
-    #site-description .logo img {
-        width: 85px;
-        height: 64px;
-        padding: 13px;
-    }
-    #site-description h1 {
-        display: block;
-        margin: 0 0 0 111px;
-        padding: 24px 0 0 0;
+        padding: 24px 0 0 24px;
+        margin: 0;
         line-height: 1em;
     }
     #site-description p {
         display: block;
-        margin: 0 0 0 109px;
     }
     #account, #main-navigation {
         background: #617179; /* Old browsers */
@@ -4076,7 +4054,7 @@ input.disabled {
         border-top: 0;
         border-bottom: 0;
         position: absolute;
-        top: 22px;
+        top: -137px;
         right: 0;
     }
     .banner img {
@@ -4085,14 +4063,13 @@ input.disabled {
     }
     #wrapper, #footer-inner {
         min-width: 980px;
-        max-width: 70%;
-        margin: auto;
-        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
     }
 }
 /* Bonus things for large screens */
 @media (min-width: 1040px) {
-
+    
 }
 
 /* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */

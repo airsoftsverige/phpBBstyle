@@ -128,7 +128,6 @@
     </nav>
     
       <div id="site-description">
-        <a href="{BOARD_URL}" title="{L_INDEX}" class="logo"><img src="{T_THEME_PATH}/images/logo.png?v=3" title="{SITENAME}"></a>
         <h1><a href="{BOARD_URL}" title="{L_INDEX}">{SITENAME}</a></h1>
         <p><a href="{BOARD_URL}" title="{L_INDEX}">{SITE_DESCRIPTION}</a></p>
       </div>
@@ -159,12 +158,14 @@
       <!-- ENDIF -->
     </nav>
   </div>
-    <div id="div-gpt-ad-1337771108139-0" class="banner">
-        <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1337771108139-0'); });</script>
-    </div>
-  <div id="container">
-    <!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
-      <div id="information" class="rules">
-        <strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED}
-      </div>
-    <!-- ENDIF -->
+
+    <div id="container">
+        <div id="div-gpt-ad-1337771108139-0" class="banner">
+            <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1337771108139-0'); });</script>
+            <img src="/forum/images/banner.png">
+        </div>
+        <!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN and (U_MCP or U_ACP) -->
+        <div id="information" class="rules">
+            <strong>{L_INFORMATION}:</strong> {L_BOARD_DISABLED}
+        </div>
+        <!-- ENDIF -->
