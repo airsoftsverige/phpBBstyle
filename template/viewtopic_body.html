@@ -162,7 +162,7 @@
           <!-- IF postrow.U_REPORT --><li class="report-icon"><a href="{postrow.U_REPORT}" title="{L_REPORT_POST}"><span>{L_REPORT_POST}</span></a></li><!-- ENDIF -->
           <!-- IF postrow.U_WARN --><li class="warn-icon"><a href="{postrow.U_WARN}" title="{L_WARN_USER}"><span>{L_WARN_USER}</span></a></li><!-- ENDIF -->
           <!-- IF postrow.U_INFO --><li class="info-icon"><a href="{postrow.U_INFO}" title="{L_INFORMATION}"><span>{L_INFORMATION}</span></a></li><!-- ENDIF -->
-          <!-- IF postrow.U_QUOTE and (ON_PAGE == TOTAL_PAGES and not postrow.S_LAST_ROW) or (ON_PAGE != TOTAL_PAGES) --><li class="quote-icon"><a href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}"><span>{L_REPLY_WITH_QUOTE}</span></a></li><!-- ENDIF -->
+          <!-- IF postrow.U_QUOTE and (TOTAL_PAGES and ON_PAGE == TOTAL_PAGES and not postrow.S_LAST_ROW) or (TOTAL_PAGES and ON_PAGE != TOTAL_PAGES) or (not TOTAL_PAGES and not postrow.S_LAST_ROW) --><li class="quote-icon"><a href="{postrow.U_QUOTE}" title="{L_REPLY_WITH_QUOTE}"><span>{L_REPLY_WITH_QUOTE}</span></a></li><!-- ENDIF -->
         </ul>
       <!-- ENDIF -->
     <!-- ENDIF -->
