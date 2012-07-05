@@ -25,14 +25,25 @@
                 <!-- ENDIF -->
             </ul>
           <!-- ENDIF -->
-        </div>
-            <div id="footer-fixed"></div>
+            <!-- Place this tag where you want the +1 button to render -->
+            <div class="g-plusone" data-annotation="inline" data-width=""></div>
+        <div id="footer-fixed"></div>
       </div>
     </div>
     <div>
         <a id="bottom" name="bottom" accesskey="z"></a>
         <!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
-    </div> 
+    </div>
+    <!-- Place this render call where appropriate -->
+    <script type="text/javascript">
+        window.___gcfg = {lang: 'sv'};
+    
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script> 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{T_TEMPLATE_PATH}/js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
     <script type="text/javascript" src="{BOARD_URL}mobiquo/tapatalkdetect.js?v=3.2.0"></script>

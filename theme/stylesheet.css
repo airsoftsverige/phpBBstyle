@@ -4119,3 +4119,16 @@ textarea[contenteditable] {-webkit-appearance: none;}
 #notice span {
     white-space: nowrap;
 }
+
+
+/*
+ * Google +1
+ */
+#___plusone_0 {
+    width: 100% !important;
+    margin-top: 10px !important;
+    clear: both;
+}
+#___plusone_0 *, #___plusone_0 .kt {
+    color: #fff !important;
+}
