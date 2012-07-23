@@ -2821,7 +2821,8 @@ dl.icon {
 
 /* Profile icons on memberlist */
 *:first-child+html {} .forums .profile-icons li {
-    display: inline;
+    display: inline-block;
+    
 }
 
 /* Ugly structure hacks for IE6 */
@@ -4124,11 +4125,13 @@ textarea[contenteditable] {-webkit-appearance: none;}
 /*
  * Google +1
  */
-#___plusone_0 {
-    width: 100% !important;
-    margin-top: 10px !important;
-    clear: both;
+#google-plusone  {
+    width: 100%;
+    margin-top: 10px;
 }
-#___plusone_0 *, #___plusone_0 .kt {
-    color: #fff !important;
+#google-plusone > div {
+    width: 400px !important;
+    border-radius: 5px;
+    padding: 10px !important;
+    background-color: #fff !important;
 }
