@@ -416,7 +416,7 @@ table.table1 {
     padding: 2px;
 }
 
-table.table1 thead th {
+table.table1 > thead > tr > th {
     font-weight: normal;
     text-transform: uppercase;
     color: #fff;
@@ -425,7 +425,7 @@ table.table1 thead th {
     padding: 0 0 4px 3px;
 }
 
-table.table1 thead th span {
+table.table1 > thead > tr > th span {
     padding-left: 7px;
 }
 
@@ -2020,7 +2020,7 @@ ul.cplist {
     margin-bottom: 1em;
 }
 
-#cp-main table.table1 thead th {
+#cp-main table.table1 thead > tr > th {
     color: #333333;
     font-weight: bold;
     border-bottom: 1px solid #333333;
@@ -2936,7 +2936,7 @@ ul.navlinks {
 
 /* Table styles
 ----------------------------------------*/
-table.table1 thead th {
+table.table1 thead > tr > th {
     color: #fff;
 }
 
@@ -3518,7 +3518,7 @@ ul.cplist {
     color: #000000;
 }
 
-#cp-main table.table1 thead th {
+#cp-main table.table1 thead > tr > th {
     color: #333333;
     border-bottom-color: #333333;
 }
