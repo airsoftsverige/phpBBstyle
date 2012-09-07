@@ -429,26 +429,26 @@ table.table1 > thead > tr > th span {
     padding-left: 7px;
 }
 
-table.table1 tbody tr {
+table.table1 > tbody > tr {
     border: 1px solid #cfcfcf;
 }
 
-table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+table.table1 > tbody > tr:hover, table.table1 > tbody > tr.hover {
     background-color: #f6f6f6;
     color: #000;
 }
 
-table.table1 td {
+table.table1 > tbody > tr > td {
     color: #6a6a6a;
     font-size: 1.1em;
 }
 
-table.table1 tbody td {
+table.table1 > tbody > tr > td {
     padding: 7px 5px;
     border-top: 1px solid #FAFAFA;
 }
 
-table.table1 tbody th {
+table.table1 > tbody > tr > th {
     padding: 5px;
     border-bottom: 1px solid #000000;
     text-align: left;
@@ -465,7 +465,7 @@ table.table1 .mark    { text-align: center; width: 7%; }
 table.table1 .info    { text-align: left; width: 25%; }
 table.table1 .info div    { width: 100%; white-space: normal; overflow: hidden; }
 table.table1 .autocol    { line-height: 2em; white-space: nowrap; }
-table.table1 thead .autocol { padding-left: 1em; }
+table.table1 > thead .autocol { padding-left: 1em; }
 
 table.table1 span.rank-img {
     float: right;
@@ -476,7 +476,7 @@ table.info td {
     padding: 3px;
 }
 
-table.info tbody th {
+table.info tbody > tr > th {
     padding: 3px;
     text-align: right;
     vertical-align: top;
@@ -2020,14 +2020,14 @@ ul.cplist {
     margin-bottom: 1em;
 }
 
-#cp-main table.table1 thead > tr > th {
+#cp-main table.table1 > thead > tr > th {
     color: #333333;
     font-weight: bold;
     border-bottom: 1px solid #333333;
     padding: 5px;
 }
 
-#cp-main table.table1 tbody th {
+#cp-main table.table1 > tbody > tr > th {
     font-style: italic;
     background-color: transparent !important;
     border-bottom: none;
@@ -2893,22 +2893,22 @@ hr.dashed {
 /*.bg2    { background-color: #e6ebf0; }*/
 /*.bg3    { background-color: #d8e0e8; }*/
 
-.forums tbody tr > td {
+.forums tbody > tr > td {
     background-color: transparent;
 }
-.forums tbody tr:nth-child(odd) {
+.forums tbody > tr:nth-child(odd) {
     background-color: #fbfcfd;
 }
-.forums tbody tr:nth-child(even) {
+.forums tbody > tr:nth-child(even) {
     background-color: #f2f4f5;
 }
-.forums tbody tr:nth-child(even) > td:nth-child(odd) {
+.forums tbody > tr:nth-child(even) > td:nth-child(odd) {
     background-color: #e8ebef;
 }
-.forums tbody tr:nth-child(odd) > td:nth-child(odd) {
+.forums tbody > tr:nth-child(odd) > td:nth-child(odd) {
     background-color: #eff2f4;
 }
-.forums tbody tr > td:nth-child(2) {
+.forums tbody > tr > td:nth-child(2) {
     text-align: left;
 }
 
@@ -2936,43 +2936,43 @@ ul.navlinks {
 
 /* Table styles
 ----------------------------------------*/
-table.table1 thead > tr > th {
+table.table1 > thead > tr > th {
     color: #fff;
 }
 
-table.table1 tbody tr {
+table.table1 > tbody > tr {
     border-color: #c2c3cc;
 }
 
-table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+table.table1 > tbody > tr:hover, table.table1 > tbody > tr.hover {
     background-color: #f8f7de;
     color: #000;
 }
 
-table.table1 td {
+table.table1 > tbody > tr > td {
     color: #666;
 }
 
-table.table1 tbody td {
+table.table1 > tbody > tr > td {
     border-bottom: 1px solid #c1c1c1;
     border-right: 1px solid #c1c1c1;
 }
 
-table.table1 tbody td:last-child {
+table.table1 > tbody > tr > td:last-child {
     border-right: none;
 }
 
-table.table1 tbody tr:last-child td {
+table.table1 > tbody > tr:last-child td {
     border-bottom: none;
 }
 
-table.table1 tbody th {
+table.table1 > tbody > tr > th {
     border-bottom-color: #000000;
     color: #333333;
     background-color: #FFFFFF;
 }
 
-table.info tbody th {
+table.info tbody > tr > th {
     color: #000000;
 }
 
@@ -3518,7 +3518,7 @@ ul.cplist {
     color: #000000;
 }
 
-#cp-main table.table1 thead > tr > th {
+#cp-main table.table1 > thead > tr > th {
     color: #333333;
     border-bottom-color: #333333;
 }
