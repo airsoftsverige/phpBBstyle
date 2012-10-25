@@ -98,7 +98,6 @@ nav ul {
     position: absolute;
 }
 #wrapper, #footer-inner {
-    min-width: 320px;
     width: 100%;
     overflow: hidden;
 }
@@ -190,9 +189,8 @@ nav ul {
     font-size: 1.1em;
 }
 #footer-inner {
-    /* Clear fix */
-    padding-right: 5px;
     overflow: hidden;
+    padding: 0 5px;
 }
 
 #footer-fixed {
@@ -402,7 +400,6 @@ ul.leftside {
 ul.rightside {
     float: right;
     margin-left: 5px;
-    margin-right: -5px;
     text-align: right;
 }
 
